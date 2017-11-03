@@ -42,7 +42,7 @@ var (
 		},
 	}
 
-	// An example response object (wuth data), for a failed response
+	// An example response object (with data), for a failed response
 	expectedResponseFail = &Response{
 		Status:  StatusFail,
 		Code:    400,
@@ -228,7 +228,7 @@ func TestData_UnmarshalJSON(t *testing.T) {
 			expected: "endpoints",
 		},
 		{
-			name:     "doube collection",
+			name:     "double collection",
 			json:     []byte(`{"status":"ok","code":200,"message":"","data":{"collection":{"language":"golang","tests":"ok"},"collection2":{"language":"golang","tests":"ok"}}}`),
 			expected: "",
 		},

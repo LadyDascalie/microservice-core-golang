@@ -121,7 +121,7 @@ func (p *Paginator) PrepareResponse() *Response {
 }
 
 // NewPaginator returns a new Paginator instance with the provided
-// parameters set and reutrns an error if it fails.
+// parameters set and returns an error if it fails.
 func NewPaginator(perPage, page, total int) (*Paginator, error) {
 	// Create the paginator.
 	p := Paginator{
